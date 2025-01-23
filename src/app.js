@@ -5,7 +5,14 @@ import "./style.css";
 import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
 
-window.onload = function() {
-  //write your code here
-  console.log("Hello Rigo from the console!");
-};
+let pronouns = ["the", "our"];
+let adjs = ["great", "big"];
+let nouns = ["jogger", "racoon"];
+
+pronouns.forEach(pronouns => {
+  adjs.forEach(adj => {
+    nouns.forEach(noun => {
+      console.log(pronouns + adj + noun);
+    });
+  });
+});
